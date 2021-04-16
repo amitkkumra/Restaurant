@@ -10,13 +10,13 @@ class RestaurantSerializer(serializers.ModelSerializer):
     # deserialize and serialize
     class Meta:
         model = models.Restaurant
-        fields = ['id', 'name', 'direction', 'phone']
+        fields = ('__all__')
 
 
 class IngredientSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Ingredient
-        fields = ['id', 'name']
+        fields = ('__all__')
 
 
 class RecipeSerializer(serializers.ModelSerializer):
@@ -59,4 +59,4 @@ class RecipeSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = models.Recipe
-        fields = ['id', 'name', 'type', 'thumbnail', 'ingredients']
+        fields = ('__all__')
