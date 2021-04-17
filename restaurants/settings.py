@@ -71,6 +71,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'restaurants.wsgi.application'
 
+STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
