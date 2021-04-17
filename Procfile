@@ -1,3 +1,16 @@
+--------------------------------------------
+**Procfile.windows** :
+web: python manage.py runserver 0.0.0.0:5000
+-------------------------------------------
+**runtime.txt** :
+python-3.7.7
+-------------------------------------------------------
+
 Procfile
 -------------------------------
-web: gunicorn <django-root-name(containing wsgi)>.wsgi --log-file -
+web: gunicorn restaurants.wsgi --log-file -
+
+-------------------------------
+**.env** :
+TIMES=2
+----------------------
